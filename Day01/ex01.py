@@ -22,3 +22,21 @@ print(a + " " + b)
 
 # 문자열 반복 연산자 : *
 print("5번 반복해서 출력!\n" * 5)
+
+asia={"한국", "중국", "일본"}
+asia.add("태국")
+asia.add("중국")
+asia.remove("일본")
+print(asia)
+
+
+li = ['월','화','수','목','금','토','일']
+print(li[0:-2])
+print(li[-2:])
+
+a = (10)
+b = (10,)
+print( a == b )
+
+
+

@@ -1,6 +1,5 @@
 
 
-# import movie
 from car import *
 car_info = getCar()
 print(car_info)

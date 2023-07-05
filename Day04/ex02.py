@@ -73,3 +73,36 @@ person3.show_info()
 
 p = Person(name='aaa')
 p.show_info
+
+
+class Board:
+    def __init__(self, title=None, writer=None, content=None):
+        self.title = title
+        self.writer = writer
+        self.content = content
+        
+    def show_info(self):
+        print('제목 : {} \n작성자 : {} \n내용 : {}'
+              .format(self.title, self.writer, self.content))
+
+board = Board('아브라카다브라'
+            , '김휴먼'
+            , '벚꽃은 오래 피지 않는다.')
+board.show_info()
+
+
+class Gallery(Board):
+    def __init__(self, title, writer, content, image):
+        super().__init__(title, writer, content)
+        self.image = image
+        
+    def show_info(self):
+        print('제목 : {} \n작성자 : {} \n내용 : {} \n이미지 : {}'
+              .format(self.title, self.writer, self.content, self.image))
+        
+gallery = Gallery('아브라카다브라'
+                , '김휴먼'
+                , '벚꽃은 오래 피지 않는다.'
+                , 'https://i.imgur.com/CbuD3gl.png')
+gallery.show_info()
+    
