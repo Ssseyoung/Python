@@ -34,7 +34,7 @@ print(li3)
 li3.append(7)
 print(li3)
 
-# insert(인덱스,요소)   : 인덱스에 요초 추가
+# insert(인덱스,요소)   : 인덱스에 요소 추가
 print('### insert() ###')
 li3.insert(2, 2.5)
 print(li3)

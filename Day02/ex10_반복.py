@@ -14,5 +14,5 @@ d = {
 }
 
 # 딕셔너리는 반복요소로 key가 반복된다
-for word in d:
+for word in d: 
     print('{}의 뜻 \t : {}'.format(word, d.get(word)))
